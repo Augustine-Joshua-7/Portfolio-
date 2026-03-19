@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Augustine Joshua. D - CV</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #1a365d;
+            --text-main: #333333;
+            --text-light: #666666;
+            --border-color: #c9d6df;
+            --bg-color: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 2rem;
+        }
+
+        .cv-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: var(--bg-color);
+            padding: 3rem 4rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Header Styles */
+        header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        h1 {
+            color: var(--primary-color);
+            font-size: 2.2rem;
+            letter-spacing: 1px;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            color: var(--text-main);
+            padding-bottom: 1rem;
+            border-bottom: 2px solid var(--border-color);
+            margin-bottom: 1rem;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            text-align: left;
+            margin-bottom: 2rem;
+            font-size: 0.95rem;
+        }
+
+        .contact-info div {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+        }
+
+        .contact-info i {
+            color: var(--primary-color);
+            width: 16px;
+        }
+
+        /* Section Styles */
+        section {
+            margin-bottom: 2rem;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            font-size: 1.2rem;
+            padding-bottom: 0.3rem;
+            border-bottom: 1px solid var(--border-color);
+            margin-bottom: 1rem;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 1rem;
+        }
+
+        ul.bullets li {
+            position: relative;
+            margin-bottom: 0.5rem;
+            font-size: 0.95rem;
+        }
+
+        ul.bullets li::before {
+            content: "◆";
+            color: var(--primary-color);
+            font-size: 0.6rem;
+            position: absolute;
+            left: -1rem;
+            top: 0.3rem;
+        }
+
+        /* Education Styles */
+        .edu-item {
+            margin-bottom: 1rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .edu-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .edu-header {
+            font-weight: 600;
+            margin-bottom: 0.2rem;
+        }
+
+        .edu-details {
+            display: flex;
+            justify-content: space-between;
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        /* Skills Styles */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 2rem;
+            row-gap: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .skill-group {
+            margin-bottom: 1rem;
+        }
+
+        .skill-title {
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 0.3rem;
+        }
+        
+        .skill-title i {
+            font-size: 0.8rem;
+            color: var(--primary-color);
+        }
+
+        .skill-desc {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            padding-left: 1.5rem;
+        }
+        
+        .skill-desc i {
+            font-size: 0.7rem;
+            margin-right: 0.3rem;
+        }
+
+        p {
+            font-size: 0.95rem;
+        }
+
+        /* Print optimization */
+        @media print {
+            body {
+                background: none;
+                padding: 0;
+            }
+
+            .cv-container {
+                box-shadow: none;
+                padding: 0;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cv-container">
+        <header>
+            <h1>D. AUGUSTINE JOSHUA</h1>
+            <div class="subtitle">B.Tech – Artificial Intelligence & Data Science</div>
+        </header>
+
+        <div class="contact-info">
+            <div><i class="fas fa-location-dot"></i> Gudalur, The Nilgiris, Tamil Nadu — 643212</div>
+            <div><i class="fas fa-phone"></i> +91 63838 37975</div>
+            <div><i class="fas fa-envelope"></i> augustinejoshu123@gmail.com</div>
+        </div>
+
+        <section>
+            <h2>Professional Summary</h2>
+            <ul class="bullets">
+                <li>AI & Data Science undergraduate passionate about transforming data into intelligent solutions.</li>
+                <li>Skilled in Python, data analysis, and machine learning fundamentals with strong analytical thinking.</li>
+                <li>A creative problem solver who blends technology, innovation, and teamwork to build impactful solutions.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Career Objective</h2>
+            <p style="padding-left: 1rem;">To obtain an entry-level opportunity where I can apply my knowledge of Artificial Intelligence and Data Science to solve real-world problems, contribute to innovative projects, and grow as a technology professional.</p>
+        </section>
+
+        <section>
+            <h2>Education Qualification</h2>
+            
+            <div class="edu-item">
+                <div class="edu-header">B.Tech – Artificial Intelligence & Data Science</div>
+                <div class="edu-details">
+                    <span>Christ the King Engineering College, Karamadai — Anna University</span>
+                    <span>2024 – 2027 | CGPA: 8.0 / 10</span>
+                </div>
+            </div>
+
+            <div class="edu-item">
+                <div class="edu-header">Higher Secondary Certificate (HSC)</div>
+                <div class="edu-details">
+                    <span>Morning Star Higher Secondary School, Gudalur</span>
+                    <span>2023 | Percentage: 72%</span>
+                </div>
+            </div>
+
+            <div class="edu-item">
+                <div class="edu-header">Secondary School Leaving Certificate (SSLC)</div>
+                <div class="edu-details">
+                    <span>Morning Star Higher Secondary School, Gudalur</span>
+                    <span>2021 | Percentage: 78%</span>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-group">
+                    <div class="skill-title"><i class="fas fa-arrow-right"></i> Web Development</div>
+                    <div class="skill-desc"><i class="fas fa-arrow-right"></i> HTML, CSS, JavaScript (Basic)</div>
+                </div>
+                
+                <div class="skill-group">
+                    <div class="skill-title"><i class="fas fa-arrow-right"></i> Video Editing</div>
+                    <div class="skill-desc"><i class="fas fa-arrow-right"></i> CapCut, DaVinci Resolve</div>
+                </div>
+
+                <div class="skill-group">
+                    <div class="skill-title"><i class="fas fa-arrow-right"></i> Graphic Design</div>
+                    <div class="skill-desc"><i class="fas fa-arrow-right"></i> Canva, Photoshop (Basic)</div>
+                </div>
+
+                <div class="skill-group">
+                    <div class="skill-title"><i class="fas fa-arrow-right"></i> Python & Data Analysis</div>
+                    <div class="skill-desc"><i class="fas fa-arrow-right"></i> Data Visualization, ML Fundamentals</div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Achievements & Extracurricular Activities</h2>
+            <ul class="bullets">
+                <li><strong>Basketball Team Captain:</strong> Led the school basketball team and won prizes at district and divisional level competitions.</li>
+                <li><strong>Volunteer – Academic Events:</strong> Assisted in organizing departmental workshops and seminars.</li>
+            </ul>
+        </section>
+        
+        <!-- Soft Skills section added as visible in part at bottom of CV screenshot -->
+        <section>
+            <h2>Soft Skills</h2>
+             <div class="skills-grid" style="margin-top: 0.5rem;">
+                <div class="skill-group">
+                    <div class="skill-title"><i class="fas fa-arrow-right"></i> Communication & Presentation</div>
+                </div>
+                <div class="skill-group">
+                    <div class="skill-title"><i class="fas fa-arrow-right"></i> Leadership & Team Collaboration</div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+</body>
+</html>
